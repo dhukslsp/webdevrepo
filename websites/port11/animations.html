@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The css animations keyframessinging</title>
+    <style>
+        .container {
+            display: flex;
+        }
+        .box{
+            background-color: rgb(16, 240, 16);
+            width: 400px;
+            height: 100px;
+            /* position: relative; */
+            /* name the animation */
+            animation-name: harr1;
+            animation-duration: 2s;
+            animation-iteration-count: 8;
+            animation-fill-mode:alternate;
+            animation-timing-function: ease-in-out;
+            /* animation-delay: 3s; */
+            animation-direction: alternate;
+        }
+        @keyframes harr1{
+            from{
+                width: 250px;
+            }
+            to{
+                width:400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="box">
+         This is box
+     </div>
+     <div class="animation">
+
+     </div>
+    </div>
+</body>
+</html>

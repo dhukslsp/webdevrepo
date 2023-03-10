@@ -1,0 +1,93 @@
+body{
+    background: url("../images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navitems{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+.navitems li{
+    list-style: none;
+    color: white;
+    padding:16px;
+    display: flex;
+    font-size:18px;
+    font-weight: bold;
+}
+.navitems li:hover{
+    background-color: rgb(58, 54, 54);
+    transition: background-color;
+    transition-duration:1s;
+}
+#logo{
+    height:48px;
+    position: relative;
+    border-radius: 12px;
+}
+.homebar p{
+    color: white;
+}
+.homebar{
+    text-align: center;
+}
+.button{
+    display:flex;
+    /* align-items:center; */
+}
+.button button{
+    margin: auto !important;
+    padding: 7px;
+}
+/* sevices section */
+.our-services{
+    display: flex;
+    padding:22px;
+}
+.our-services h1{
+    color:white;
+    margin: auto;
+    /* flex-wrap: wrap; */
+    /* height:200px; */
+}
+.servis{
+    display: inline;
+    color:rgb(255, 255, 255);
+    border: 2px solid white;
+    padding: 10px;
+    /* height: 200px;
+    width:100px; */
+    /* align-items: center; */
+}
+#MyId{
+    height : 100px;
+    display : inline;
+}
+.box-container{
+    height : 530px;
+    /* border: 2px solid white; */
+    display: flex;
+}
+.box-container div{
+    display:block;
+    margin: auto;
+    /* padding: 50px; */
+}
+/* #texprary check */
+.box-container div h2{
+    padding:12px;
+    color:rgb(255, 255, 255);
+}
+.images12{
+    height: 250px;
+    margin :auto;
+    padding: 12px;
+}
+.con-1 button{
+    padding:7px;
+}
+.con-1 p{
+    color: white;
+}

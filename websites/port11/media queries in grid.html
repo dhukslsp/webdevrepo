@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid + media Queries</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap:1rem;
+            grid-template-areas: 
+            "Navbar Navbar Navbar"
+            "Section Section Section aside"
+            /* "as\\\ */
+            /* "footer footer footer fo"  */;
+
+        }
+        @media only screen and (max-width:300px) {
+        body {
+            background-color: red;
+        }}
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+                body {
+                    background-color: blue;
+                }}
+        @media (min-width: 500px) and (max-width:800px) {
+                body {
+                    background-color: yellow;
+                }
+                .container{
+                    grid-template-areas: 
+                    "Navbar Navbar Navbar Navbar"
+                    "section section Section aside";
+                }
+            }
+        @media (min-width: 800px) {
+                body {
+                    background-color: green;
+                }}
+        .bdr{
+            border: 2px solid black;
+            padding: 23px;
+            background-color: wheat;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class = "bdr">
+        Home Abot contact
+    </nav>
+    <section>
+        <h2 class = "bdr">Learn CSS in Hindi</h2>
+    </section>
+    <aside>
+        <h1 class = "bdr">
+            More About us
+        </h1>
+    </aside>
+</div>
+<footer class = bdr>
+    Copyright CodeWithDhruv
+</footer>
+</body>
+</html>

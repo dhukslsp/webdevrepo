@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+    .card {
+        padding: 23px 12px;
+        margin:23px 12px;
+        border: 2px solid red;
+        background-color: burlywood;
+        /* box-shadow offset-x offset-y blurradius */
+        /* box-shadow: 12px 13px 20px rgba(2,4,4,0.5); */
+        /* box-shadow : inset 3px 5px 4px green; */
+        box-shadow: 3px 5px green, 4px 6px red;
+
+    }
+    .card h2{
+        text-shadow: 1px 1px green;
+    }
+</style>
+
+<body>
+    <div class="continer">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, laudantium placeat beatae dolor quibusdam
+                minus fugiat atque distinctio ipsam, magni quisquam rerum veniam tempora vel eaque possimus delectus
+                animi ullam. Quaerat, et! Doloremque, saepe!</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>
+                Card2
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore asperiores fugiat ut, consequatur minima
+                unde nostrum nobis, incidunt voluptatum molestias quo blanditiis quidem quasi distinctio molestiae
+                dolorum maiores sapiente rerum laborum necessitatibus facilis fugit.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>
+                Card3
+            </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore asperiores fugiat ut, consequatur minima
+                unde nostrum nobis, incidunt voluptatum molestias quo blanditiis quidem quasi distinctio molestiae
+                dolorum maiores sapiente rerum laborum necessitatibus facilis fugit.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is a nice document</title>
+  <style>
+    .commone{
+      display: grid;
+      grid-gap: 6px;
+      grid-template-columns: repeat(auto-fit,minmax(100px,2fr));
+      /* grid-template-columns: auto; */
+      /* grid-template-rows:  */
+      /* background-color: antiquewhite; */
+    }
+    .commone :hover{
+      background-color: silver;
+    }
+    .Myanimation{
+      background-color: silver;
+      width:400px; height:100px;
+      animation-name: harr1;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction:alternate;
+    }
+    @keyframes harr1 {
+      from{
+        width:250px;
+      }
+      to{
+        width:400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="commone">
+    <div>THis is is got-1</div>
+    <div>THis is is got-2</div>
+    <div>THis is is got-3</div>
+    <div>THis is is got-4</div>
+    <div>THis is is got-5</div>
+  </div>
+  <div class="Myanimation">This is my animation</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    height: 59px;
+    /* background-color: black; */
+}
+.navbar li{
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    color: black;
+    font-weight: bold; 
+    justify-content: center; 
+}
+.navbar>li:hover{
+    /* color: black; */
+    text-underline-position: below;
+    color: blue;
+}
+.Search{
+    display: flex;
+    justify-content: center;
+
+    
+}
+.SearchBox{
+    margin: 29px;
+    height: 52px;
+    font-size: large;
+    font-weight: bold;
+}
+.cl1{
+    display: flex;
+    flex-direction: row;
+}
+.material{
+    /* margin written for the images pack */
+    border: 2px solid black;
+    height:18pc;
+    width: 25%;
+    margin:20px;
+    margin-top: 0%;
+    display: block;
+}
+.images{
+    /* padding written for the work */
+    height:auto;
+    width:100%;
+    height:100%;
+}

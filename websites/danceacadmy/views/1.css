@@ -1,0 +1,124 @@
+.head>ul>li{
+    display:inline;
+    list-style: none;
+    padding:17px;
+    border-radius: 11px;
+    font-weight: bold;
+}
+
+.head>ul{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.head>ul>li:hover{
+    background-color: black;
+    transition-duration: 0.1s;
+    color: white;
+}
+/* The main css for the whole slideshow */
+/* making the boxsizong display css */
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: inline;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 56px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  /* margin: 15px; */
+  margin-top: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding: 10px;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.mySlides{
+  width: 17pc;
+}
+/* The css for designiing the ,ain website starts now */
+.maincontent{
+  height: 34pc;
+  display: inline-flex;
+  /* flex-wrap: wrap; */
+}
+.class{
+  display:inline-block;
+  padding:20px;
+  width:50%;
+  border:4px solid black;
+  margin:20px;
+  text-align: center;
+  /* height:30pc; */
+}
+.Button{
+  padding:12px;
+  font-size: 26px;
+  color:white;
+  background-color: black;
+  border-radius: 11px;
+  margin-top: 26px;
+}
+/* new media query for the screen */
+@media only screen and (max-width:846px){
+  .maincontent{flex-wrap: wrap;}
+  .class{width: 100%; height:36pc}
+}
+.sponsorfooter{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Heading{
+  text-align: center;
+  font-size: 44px;
+  font-weight: bold;
+}
