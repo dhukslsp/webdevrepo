@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jsValidation1.js"></script>
+</head>
+<style>
+    form > div > input{
+        padding-top: 11px;
+        margin-top: 11px;
+        width: 100%;
+    }
+    form > div{
+        margin-bottom: 1pc;
+    }
+    h2{
+        text-align: center;
+    }
+</style>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action = "#" onsubmit="validateForm();return false" style = "display: flex; flex-direction: column; width: 20%; margin-left: auto;margin-right: auto;">
+  <div>Name: <input type="text" name="fname"></div>
+  <div>email: <input type="text" name="Email"></div>
+  <div>Phone +91: <input type="phone" name="Phone"></div>
+  <div>pasword: <input type="password" name="password"></div>
+  <input type="submit" value="Submit"><br>
+
+</form>
+
+</body>
+</html>
